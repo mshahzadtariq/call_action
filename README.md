@@ -35,7 +35,7 @@ $ bundle install
 Generate configuration file using 
 
 ```sh
-rails generate call_action:install
+$ rails generate call_action:install
 ```
 
 It would generate call_action.rb file inside initializers folder of your application. Here you need to specify api version (current version is v1) and your auth token
