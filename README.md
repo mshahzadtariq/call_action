@@ -8,6 +8,17 @@ This gem is ruby wrapper for [CallAction](https://callaction.co/) API. It is ope
   - Build Your Lead Database
   - Answer Every Call
 
+### Supported Rubies
+
+CallAction supports and is tested against the following Ruby versions:
+
+  - 1.9.3
+  - 2.0.0
+  - 2.2.0
+  - 2.3.0
+  
+CallAction may work just fine with a Ruby version not listed above, but we can't guarantee that it will. If you'd like to maintain a Ruby that isn't listed, please let us know with a pull request.
+
 ### Installation
 
 Add call_action gem to your Gemfile
@@ -24,7 +35,7 @@ $ bundle install
 Generate configuration file using 
 
 ```sh
-rails generate call_action:install
+$ rails generate call_action:install
 ```
 
 It would generate call_action.rb file inside initializers folder of your application. Here you need to specify api version (current version is v1) and your auth token
