@@ -19,3 +19,5 @@ gemfiles/*.lock
 pkg
 tmp/*
 *.gem
+.idea
+.idea/*
