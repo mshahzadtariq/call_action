@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'call_action'
-  s.version     = '2.0'
-  s.date        = '2017-05-03'
+  s.version     = '2.3.1'
+  s.date        = '2017-05-11'
   s.summary     = "CallAction API "
   s.description = "Ruby wrapper for CallAction API to be used within Ruby On Rails (RoR) and other Ruby based frameworks"
   s.authors     = ["Shahzad Tariq"]

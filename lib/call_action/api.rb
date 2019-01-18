@@ -22,11 +22,18 @@ module CallAction
     end
 
     # To get list of all contacts
-    def contacts
+    def contacts start_date=nil, end_date=nil
     	url = URI.parse("#{@base_url}#{@api_version}/contacts")
-  	  request = Net::HTTP::Get.new(url.request_uri)
 
-  	  @headers.each {|k, v| request[k] = v }
+      params = {}
+      params[:start] = start_date if start_date.present?
+      params[:end] = end_date if end_date.present?
+
+      path = params.present? ? "#{url.request_uri}?".concat(params.collect { |k,v| "#{k}=#{CGI::escape(v.to_s)}" }.join('&')) : url.request_uri
+
+      request = Net::HTTP::Get.new(path)
+
+      @headers.each {|k, v| request[k] = v }
 
   	  response = Net::HTTP.start(url.hostname, url.port, :use_ssl => url.scheme == 'https') do |http|
   		  http.request(request)
