@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name        = 'call_action'
-  s.version     = '2.3.1'
+  s.version     = '3.0'
   s.date        = '2017-05-11'
   s.summary     = "CallAction API "
-  s.description = "Ruby wrapper for CallAction API to be used within Ruby On Rails (RoR) and other Ruby based frameworks"
+  s.description = "Ruby wrapper for CallAction API. It can be used within Ruby On Rails (RoR) and other Ruby based frameworks"
   s.authors     = ["Shahzad Tariq"]
   s.email       = 'm.shahzad.tariq@hotmaul.com'
   s.files       = `git ls-files`.split($\).reject{|f| f =~ /(\.gemspec)/ }

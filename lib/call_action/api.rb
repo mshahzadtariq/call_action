@@ -12,7 +12,7 @@ module CallAction
     def initialize headers = {}
     	@token = CallAction.auth_token
     	@api_version =  CallAction.api_version
-    	@base_url = "https://callaction.co/api/"
+    	@base_url = "https://app.callaction.co/api/"
     	@headers = {"Accept" => "application/json", "Content-Type" => "application/json", "X-AUTH-TOKEN" => @token}.merge(headers)
     end 	
 
